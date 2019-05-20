@@ -1,0 +1,117 @@
+body,
+html {
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-image: linear-gradient(to right bottom, #5643fa, #2998ff, #fffaf0),
+    url('./img/nat-1.jpg');
+
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  position: relative;
+}
+
+.main-title {
+  font-family: 'Bitter', serif;
+  margin-top: 5%;
+  text-align: center;
+  color: #7cfc00;
+  text-shadow: 1px 1px black;
+}
+
+.container {
+  width: 70%;
+  min-height: 437px;
+  min-width: 447px;
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.question-container {
+  width: 80%;
+  height: 300px;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+}
+.question-title {
+  font-size: 28px;
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #800000;
+}
+.question-list {
+  margin-top: 3%;
+  height: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.question-item {
+  margin-top: 1%;
+  font-size: 19px;
+  font-family: 'Indie Flower', cursive;
+  color: #ffd700;
+}
+.question-img {
+  height: 68%;
+  margin-top: 1.5%;
+}
+
+.buttons-container {
+  width: 80%;
+  display: flex;
+  align-self: center;
+  justify-content: space-between;
+  margin-left: 5%;
+}
+.btn {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1rem 3rem;
+  display: inline-block;
+  border-radius: 10rem;
+  transition: all 0.2s;
+  position: relative;
+  border: none;
+  cursor: pointer;
+  background-color: #fafad2;
+  color: #d2691e;
+  font-size: 18px;
+}
+.btn:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 1rem 2rem rgba(black, 0.6);
+  background-color: #d2691e;
+  color: #fafad2;
+}
+
+.btn::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+.btn:active,
+.btn:focus {
+  outline: none;
+
+  box-shadow: 0 0.5rem 1rem rgba(black, 0.2);
+}
+.container-score {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.total-score {
+  font-size: 50px;
+  font-family: 'Pacifico', cursive;
+}
+
+.feedback-score {
+  font-size: 30px;
+  font-family: 'Cute Font', cursive;
+}
